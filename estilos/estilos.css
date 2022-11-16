@@ -1,0 +1,36 @@
+
+body{
+    color: aliceblue;
+    background-color: rgb(43, 46, 51);
+}
+
+footer{
+    min-height: 70px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer{ 
+  min-height: 70px;
+  position: relative;
+  clear: both;
+  margin-top: 10px;
+  padding-top: 0px;
+  overflow: visible;
+}
+
+.card img{
+    padding-top: 10px;
+   
+}
+.card a h3{
+    text-decoration: none;
+}
+
+.card .btn{
+    width: 100px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+  
+}
+

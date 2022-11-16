@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#Content{
+    width:20rem;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 30px;
+    border-radius: 10%;
+    height: 17rem;
+    margin-top: 200px;
+}
+#Content2{
+    margin-top: 200px;
+
+}
+
+body{
+    color: aliceblue!important;
+    background: linear-gradient(45deg,rgb(68, 11, 11), rrgb(25, 7, 46) rgb(110, 15, 82),black);
+    background-size: 400% 400%;
+
+    background-repeat: no-repeat;
+}
+input[type="password"],input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+input[type="submit"] {
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    outline: none;
+    height: 30px;
+    width: 100px;
+    background: #0f0f0f63;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
