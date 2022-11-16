@@ -1,3 +1,5 @@
+<?php session_start();
+$nombre= $_SESSION['usuario']; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,12 +40,12 @@
         </ul>
 
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Vendedores
+          <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php  echo $nombre ?>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="../listar.php">Editar Productos</a>
-            <a class="dropdown-item" href="../abm/agregar.html">Agregar producto</a>
+            <a class="dropdown-item" href="../abm/agregar1.php">Agregar producto</a>
 
           </div>
         </div>

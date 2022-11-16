@@ -21,7 +21,8 @@ $respuesta = mysqli_query($conexion, $consulta);
 // 5) Transformamos el registro obtenido a un array
 $datos=mysqli_fetch_array($respuesta);
 ?>
-
+<?php session_start();
+$nombre= $_SESSION['usuario']; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -70,12 +71,12 @@ $datos=mysqli_fetch_array($respuesta);
       </ul>
 
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Vendedores
-        </button>
+          <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php  echo $nombre ?>
+          </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="../listar.php">Editar Productos</a>
-          <a class="dropdown-item" href="agregar.html">Agregar producto</a>
+          <a class="dropdown-item" href="agregar1.php">Agregar producto</a>
 
         </div>
       </div>

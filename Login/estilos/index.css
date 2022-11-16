@@ -9,9 +9,9 @@
 }
 #Content{
     width:20rem;
-    background-color: rgba(0, 0, 0, 0.445);
+    border: 1px solid rgba(255, 255, 255, 0.699);
     padding: 30px;
-    border-radius: 10%;
+    border-radius: 5%;
     height: 17rem;
     margin-top: 200px;
 }
@@ -22,7 +22,6 @@
 
 body{
     color: aliceblue!important;
-    background: linear-gradient(45deg,rgb(68, 11, 11), rrgb(25, 7, 46) rgb(110, 15, 82),black);
     background-size: 400% 400%;
 
     background-repeat: no-repeat;
